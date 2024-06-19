@@ -1,0 +1,22 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "predicates": {
+                        "minecraft:enchantments": [
+                            {
+                                "enchantments": "lapis:stale"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "lapis:food/stale"
+    },
+    "sends_telemetry_event": false
+}

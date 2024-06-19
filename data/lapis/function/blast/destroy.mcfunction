@@ -1,0 +1,9 @@
+$execute positioned ^-1 ^-1 ^ if block ~ ~ ~ $(block) run function lapis:block/destroy_with_loot
+$execute positioned ^-1 ^ ^ if block ~ ~ ~ $(block) run function lapis:block/destroy_with_loot
+$execute positioned ^-1 ^1 ^ if block ~ ~ ~ $(block) run function lapis:block/destroy_with_loot
+$execute positioned ^ ^-1 ^ if block ~ ~ ~ $(block) run function lapis:block/destroy_with_loot
+$execute positioned ^ ^ ^ if block ~ ~ ~ $(block) run function lapis:block/destroy_with_loot
+$execute positioned ^ ^1 ^ if block ~ ~ ~ $(block) run function lapis:block/destroy_with_loot
+$execute positioned ^1 ^-1 ^ if block ~ ~ ~ $(block) run function lapis:block/destroy_with_loot
+$execute positioned ^1 ^ ^ if block ~ ~ ~ $(block) run function lapis:block/destroy_with_loot
+$execute positioned ^1 ^1 ^ if block ~ ~ ~ $(block) run function lapis:block/destroy_with_loot

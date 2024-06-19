@@ -1,0 +1,11 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "rewards": {
+        "function": "lapis:advancements/inventory_changed"
+    },
+    "sends_telemetry_event": false
+}

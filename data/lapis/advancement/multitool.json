@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "item": {
+                    "components": {
+                        "minecraft:custom_data": "{lapis:{multitool:1b}}"
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "lapis:multitool/trigger"
+    }
+}

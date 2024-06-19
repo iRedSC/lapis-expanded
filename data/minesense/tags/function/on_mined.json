@@ -1,3 +1,7 @@
 {
-    "values": ["mench:blast/check", "mench:chopping/check"]
+    "values": [
+        "lapis:blast/check",
+        "lapis:chopping/check",
+        "lapis:veinmine/check"
+    ]
 }

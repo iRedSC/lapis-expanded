@@ -1,0 +1,21 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "slots": {
+            "weapon.mainhand": {
+                "predicates": {
+                    "minecraft:enchantments": [
+                        {
+                            "enchantments": "lapis:chopping",
+                            "levels": {
+                                "min": 0,
+                                "max": 1000
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

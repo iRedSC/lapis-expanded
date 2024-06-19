@@ -1,1 +1,0 @@
-$execute as @e[type=item,distance=..$(radius),tag=!mench.greed] run function mench:greed/trigger_item
