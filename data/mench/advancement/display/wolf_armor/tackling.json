@@ -1,0 +1,23 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:bone",
+            "count": 1,
+            "components": {
+                "minecraft:enchantment_glint_override": true
+            }
+        },
+        "title": "Tackling",
+        "description": "Slows and weakens attacked mobs.",
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "parent": "mench:display/wolf_armor/root",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "sends_telemetry_event": false
+}

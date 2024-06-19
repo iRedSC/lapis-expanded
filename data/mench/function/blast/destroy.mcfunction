@@ -1,0 +1,9 @@
+$execute positioned ^-1 ^-1 ^ if block ~ ~ ~ $(block) run setblock ~ ~ ~ air destroy
+$execute positioned ^-1 ^ ^ if block ~ ~ ~ $(block) run setblock ~ ~ ~ air destroy
+$execute positioned ^-1 ^1 ^ if block ~ ~ ~ $(block) run setblock ~ ~ ~ air destroy
+$execute positioned ^ ^-1 ^ if block ~ ~ ~ $(block) run setblock ~ ~ ~ air destroy
+$execute positioned ^ ^ ^ if block ~ ~ ~ $(block) run setblock ~ ~ ~ air destroy
+$execute positioned ^ ^1 ^ if block ~ ~ ~ $(block) run setblock ~ ~ ~ air destroy
+$execute positioned ^1 ^-1 ^ if block ~ ~ ~ $(block) run setblock ~ ~ ~ air destroy
+$execute positioned ^1 ^ ^ if block ~ ~ ~ $(block) run setblock ~ ~ ~ air destroy
+$execute positioned ^1 ^1 ^ if block ~ ~ ~ $(block) run setblock ~ ~ ~ air destroy

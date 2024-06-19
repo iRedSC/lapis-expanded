@@ -1,0 +1,20 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:enchanted_book",
+            "count": 1
+        },
+        "title": "More Enchantments",
+        "description": "A datapack that adds over 100 new enchantments",
+        "background": "minecraft:textures/block/smithing_table_bottom.png",
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:tick"
+        }
+    },
+    "sends_telemetry_event": false
+}

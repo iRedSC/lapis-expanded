@@ -1,0 +1,9 @@
+execute if items entity @n[tag=mench.temp.player] hotbar.0 #taglib:shulker_boxes[minecraft:enchantments~[{enchantments:"mench:vacuum"}]] run function mench:vacuum/run {slot: 0}
+execute unless score $success mench.temp matches 1 if items entity @n[tag=mench.temp.player] hotbar.1 #taglib:shulker_boxes[minecraft:enchantments~[{enchantments:"mench:vacuum"}]] run function mench:vacuum/run {slot: 1}
+execute unless score $success mench.temp matches 1 if items entity @n[tag=mench.temp.player] hotbar.2 #taglib:shulker_boxes[minecraft:enchantments~[{enchantments:"mench:vacuum"}]] run function mench:vacuum/run {slot: 2}
+execute unless score $success mench.temp matches 1 if items entity @n[tag=mench.temp.player] hotbar.3 #taglib:shulker_boxes[minecraft:enchantments~[{enchantments:"mench:vacuum"}]] run function mench:vacuum/run {slot: 3}
+execute unless score $success mench.temp matches 1 if items entity @n[tag=mench.temp.player] hotbar.4 #taglib:shulker_boxes[minecraft:enchantments~[{enchantments:"mench:vacuum"}]] run function mench:vacuum/run {slot: 4}
+execute unless score $success mench.temp matches 1 if items entity @n[tag=mench.temp.player] hotbar.5 #taglib:shulker_boxes[minecraft:enchantments~[{enchantments:"mench:vacuum"}]] run function mench:vacuum/run {slot: 5}
+execute unless score $success mench.temp matches 1 if items entity @n[tag=mench.temp.player] hotbar.6 #taglib:shulker_boxes[minecraft:enchantments~[{enchantments:"mench:vacuum"}]] run function mench:vacuum/run {slot: 6}
+execute unless score $success mench.temp matches 1 if items entity @n[tag=mench.temp.player] hotbar.7 #taglib:shulker_boxes[minecraft:enchantments~[{enchantments:"mench:vacuum"}]] run function mench:vacuum/run {slot: 7}
+execute unless score $success mench.temp matches 1 if items entity @n[tag=mench.temp.player] hotbar.8 #taglib:shulker_boxes[minecraft:enchantments~[{enchantments:"mench:vacuum"}]] run function mench:vacuum/run {slot: 8}

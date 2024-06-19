@@ -1,0 +1,23 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:oak_log",
+            "count": 1,
+            "components": {
+                "minecraft:enchantment_glint_override": true
+            }
+        },
+        "title": "Chopping",
+        "description": "Destroys all connected logs above the one that was broken.",
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "parent": "mench:display/axe/root",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "sends_telemetry_event": false
+}

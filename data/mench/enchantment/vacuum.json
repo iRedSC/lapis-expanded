@@ -1,0 +1,20 @@
+{
+    "description": {
+        "text": "Vacuum",
+        "color": "#FF55FF"
+    },
+    "supported_items": "#taglib:shulker_boxes",
+    "primary_items": "#taglib:shulker_boxes",
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 0,
+    "slots": []
+}

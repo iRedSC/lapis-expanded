@@ -1,0 +1,40 @@
+{
+    "description": "Sparking",
+    "supported_items": "minecraft:wolf_armor",
+    "primary_items": "minecraft:wolf_armor",
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 0,
+    "slots": ["any"],
+    "effects": {
+        "minecraft:tick": [
+            {
+                "effect": {
+                    "type": "minecraft:spawn_particles",
+                    "particle": {
+                        "type": "minecraft:crit"
+                    },
+                    "horizontal_position": {
+                        "type": "in_bounding_box",
+                        "scale": 5
+                    },
+                    "vertical_position": {
+                        "type": "in_bounding_box",
+                        "scale": 5
+                    },
+                    "horizontal_velocity": {},
+                    "vertical_velocity": {},
+                    "speed": 0
+                }
+            }
+        ]
+    }
+}

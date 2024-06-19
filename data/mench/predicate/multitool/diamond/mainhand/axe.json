@@ -1,0 +1,14 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "slots": {
+            "weapon.mainhand": {
+                "items": "minecraft:diamond_axe",
+                "components": {
+                    "minecraft:custom_data": "{mench:{multitool:true}}"
+                }
+            }
+        }
+    }
+}
