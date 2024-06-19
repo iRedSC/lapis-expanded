@@ -1,7 +1,6 @@
 
-
-# scoreboard objectives add lapis.pickup_delay dummy
-# scoreboard objectives add lapis.spawned dummy
+scoreboard objectives add lapis.soulbound dummy
+scoreboard objectives add lapis.time_since_death minecraft.custom:minecraft.time_since_death
 
 scoreboard objectives add lapis.veinmine dummy
 

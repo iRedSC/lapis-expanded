@@ -1,5 +1,6 @@
 tag @s add lapis.greed.player
 
+
 scoreboard players set $level lapis.temp 0
 execute store result score $ lapis.temp run data get entity @s Inventory[{Slot:100b}].components."minecraft:enchantments".levels."lapis:greed"
 scoreboard players operation $level lapis.temp += $ lapis.temp
@@ -12,6 +13,7 @@ scoreboard players operation $level lapis.temp += $ lapis.temp
 
 execute store result score $ lapis.temp run data get entity @s Inventory[{Slot:103b}].components."minecraft:enchantments".levels."lapis:greed"
 scoreboard players operation $level lapis.temp += $ lapis.temp
+
 
 
 execute store result storage lapis:data temp.radius int 2 run scoreboard players get $level lapis.temp

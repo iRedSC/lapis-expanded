@@ -1,10 +1,10 @@
 {
     "description": {
-        "text": "Vacuum",
-        "color": "#FFAA00"
+        "text": "Immortal",
+        "color": "#00AAAA"
     },
-    "supported_items": "#taglib:shulker_boxes",
-    "primary_items": "#taglib:shulker_boxes",
+    "supported_items": "#taglib:all",
+    "primary_items": "#taglib:all",
     "weight": 1,
     "max_level": 1,
     "min_cost": {

@@ -1,0 +1,104 @@
+[
+    {
+        "function": "minecraft:set_item",
+        "item": "minecraft:iron_hoe",
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "slots": {
+                        "weapon.mainhand": {
+                            "items": "#taglib:iron_tools"
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_item",
+        "item": "minecraft:diamond_hoe",
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "slots": {
+                        "weapon.mainhand": {
+                            "items": "#taglib:diamond_tools"
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_item",
+        "item": "minecraft:golden_hoe",
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "slots": {
+                        "weapon.mainhand": {
+                            "items": "#taglib:golden_tools"
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_item",
+        "item": "minecraft:stone_hoe",
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "slots": {
+                        "weapon.mainhand": {
+                            "items": "#taglib:stone_tools"
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_item",
+        "item": "minecraft:wooden_hoe",
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "slots": {
+                        "weapon.mainhand": {
+                            "items": "#taglib:wooden_tools"
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_item",
+        "item": "minecraft:netherite_hoe",
+        "conditions": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "slots": {
+                        "weapon.mainhand": {
+                            "items": "#taglib:netherite_tools"
+                        }
+                    }
+                }
+            }
+        ]
+    }
+]

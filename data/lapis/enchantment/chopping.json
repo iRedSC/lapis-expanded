@@ -1,12 +1,12 @@
 {
     "description": {
         "text": "Chopping",
-        "color": "#FF55FF"
+        "color": "#FFAA00"
     },
     "supported_items": "#minecraft:axes",
     "primary_items": "#minecraft:axes",
     "weight": 10,
-    "max_level": 1,
+    "max_level": 5,
     "min_cost": {
         "base": 0,
         "per_level_above_first": 0
