@@ -7,7 +7,7 @@
                     "predicates": {
                         "minecraft:enchantments": [
                             {
-                                "enchantments": "lapis:fresh"
+                                "enchantments": "lapis:food/fresh"
                             }
                         ]
                     }

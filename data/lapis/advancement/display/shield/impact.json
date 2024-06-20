@@ -23,7 +23,7 @@
                         "predicates": {
                             "minecraft:enchantments": [
                                 {
-                                    "enchantments": "lapis:impact"
+                                    "enchantments": "lapis:shield/impact"
                                 }
                             ]
                         }

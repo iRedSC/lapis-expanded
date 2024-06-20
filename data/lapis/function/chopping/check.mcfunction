@@ -2,7 +2,7 @@ tag @s add lapis.temp.player
 scoreboard players operation $temp lapis.id = @s lapis.id
 execute as @e[tag=lapis.veinmine] if score @s lapis.id = $temp lapis.id run tag @s add lapis.temp
 
-execute if predicate lapis:enchantments/holding_chopping_tool store result score $level lapis.temp run data get entity @s SelectedItem.components."minecraft:enchantments".levels."lapis:chopping"
+execute if predicate lapis:enchantments/holding_chopping_tool store result score $level lapis.temp run data get entity @s SelectedItem.components."minecraft:enchantments".levels."lapis:axe/chopping"
 
 
 execute if score $level lapis.temp matches 1 run scoreboard players set $temp lapis.veinmine 5

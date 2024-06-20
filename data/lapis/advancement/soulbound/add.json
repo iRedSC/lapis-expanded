@@ -16,7 +16,7 @@
                                             "predicates": {
                                                 "minecraft:enchantments": [
                                                     {
-                                                        "enchantments": "lapis:soulbound"
+                                                        "enchantments": "lapis:any/soulbound"
                                                     }
                                                 ]
                                             }
@@ -33,7 +33,7 @@
                                             "predicates": {
                                                 "minecraft:enchantments": [
                                                     {
-                                                        "enchantments": "lapis:soulbound"
+                                                        "enchantments": "lapis:any/soulbound"
                                                     }
                                                 ]
                                             }
@@ -50,7 +50,7 @@
                                             "predicates": {
                                                 "minecraft:enchantments": [
                                                     {
-                                                        "enchantments": "lapis:soulbound"
+                                                        "enchantments": "lapis:any/soulbound"
                                                     }
                                                 ]
                                             }
@@ -67,7 +67,7 @@
                                             "predicates": {
                                                 "minecraft:enchantments": [
                                                     {
-                                                        "enchantments": "lapis:soulbound"
+                                                        "enchantments": "lapis:any/soulbound"
                                                     }
                                                 ]
                                             }
@@ -84,7 +84,7 @@
                                             "predicates": {
                                                 "minecraft:enchantments": [
                                                     {
-                                                        "enchantments": "lapis:soulbound"
+                                                        "enchantments": "lapis:any/soulbound"
                                                     }
                                                 ]
                                             }
@@ -99,7 +99,7 @@
         }
     },
     "rewards": {
-        "function": "lapis:soulbound/trigger"
+        "function": "lapis:any/soulbound/trigger"
     },
     "sends_telemetry_event": false
 }
