@@ -1,7 +1,6 @@
 
 
-execute as @e[tag=, type=marker] run tag @s add lapis.temp
-execute as @n[tag=lapis.temp] run tag @s add lapis.veinmine
+summon marker ~ ~ ~ {Tags:["lapis.temp", "lapis.veinmine"]}
 
 execute unless score @s lapis.id = @s lapis.id run scoreboard players add $next lapis.id 1
 execute unless score @s lapis.id = @s lapis.id run scoreboard players operation @s lapis.id = $next lapis.id

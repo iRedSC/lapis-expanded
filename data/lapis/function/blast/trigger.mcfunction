@@ -1,7 +1,5 @@
 
-
-execute as @e[tag=, type=marker] run tag @s add lapis.temp
-execute as @n[tag=lapis.temp] run tag @s add lapis.blast
+summon marker ~ ~ ~ {Tags:["lapis.temp", "lapis.blast"]}
 
 function lapis:id/get
 

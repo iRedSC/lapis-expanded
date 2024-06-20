@@ -24,10 +24,6 @@
                     "type": "minecraft:all_of",
                     "effects": [
                         {
-                            "type": "minecraft:summon_entity",
-                            "entity": "minecraft:marker"
-                        },
-                        {
                             "type": "minecraft:run_function",
                             "function": "lapis:chopping/trigger"
                         }

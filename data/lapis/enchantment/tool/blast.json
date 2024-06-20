@@ -1,5 +1,9 @@
 {
-    "description": "Blast",
+    "description": {
+        "text": "Blast",
+        "color": "#FFAA00"
+    },
+    "exclusive_set": ["lapis:axe/chopping", "lapis:pickaxe/veinmine"],
     "supported_items": "#minecraft:enchantable/mining",
     "primary_items": "#minecraft:enchantable/mining",
     "weight": 10,
@@ -20,10 +24,6 @@
                 "effect": {
                     "type": "minecraft:all_of",
                     "effects": [
-                        {
-                            "type": "minecraft:summon_entity",
-                            "entity": "minecraft:marker"
-                        },
                         {
                             "type": "minecraft:run_function",
                             "function": "lapis:blast/trigger"
