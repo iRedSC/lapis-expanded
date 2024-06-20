@@ -8,16 +8,33 @@
             }
         },
         "title": "Chopping",
-        "description": "Destroys all connected logs above the one that was broken.",
+        "description": "Destroys connected logs, the higher the level, the larger the range.",
         "frame": "task",
-        "show_toast": false,
+        "show_toast": true,
         "announce_to_chat": false
     },
     "parent": "lapis:display/axe/root",
     "criteria": {
         "requirement": {
-            "trigger": "minecraft:impossible"
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lapis:chopping"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
         }
+    },
+    "rewards": {
+        "function": "lapis:advancements/display/axe/chopping",
+        "experience": 10
     },
     "sends_telemetry_event": false
 }

@@ -10,14 +10,31 @@
         "title": "Impact",
         "description": "Creates an explosion when blocking damage.",
         "frame": "task",
-        "show_toast": false,
+        "show_toast": true,
         "announce_to_chat": false
     },
     "parent": "lapis:display/shield/root",
     "criteria": {
         "requirement": {
-            "trigger": "minecraft:impossible"
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lapis:impact"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
         }
+    },
+    "rewards": {
+        "function": "lapis:advancements/display/shield/impact",
+        "experience": 10
     },
     "sends_telemetry_event": false
 }

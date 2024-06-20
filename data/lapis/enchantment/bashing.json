@@ -43,16 +43,34 @@
                             "sound": "minecraft:entity.zombie.attack_iron_door",
                             "volume": 1,
                             "pitch": 0.5
+                        },
+                        {
+                            "type": "minecraft:run_function",
+                            "function": "lapis:test"
                         }
                     ]
                 },
                 "requirements": {
-                    "condition": "minecraft:entity_properties",
-                    "entity": "attacker",
-                    "predicate": {
-                        "flags": {
-                            "is_sprinting": true
+                    "condition": "minecraft:random_chance",
+                    "chance": {
+                        "type": "minecraft:enchantment_level",
+                        "amount": {
+                            "type": "minecraft:linear",
+                            "base": 0.25,
+                            "per_level_above_first": 0.1
                         }
+                    }
+                }
+            }
+        ],
+        "minecraft:damage": [
+            {
+                "effect": {
+                    "type": "minecraft:add",
+                    "value": {
+                        "type": "minecraft:linear",
+                        "base": 5,
+                        "per_level_above_first": 1
                     }
                 }
             }
