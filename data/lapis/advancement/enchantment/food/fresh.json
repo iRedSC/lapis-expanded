@@ -1,0 +1,22 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "predicates": {
+                        "minecraft:enchantments": [
+                            {
+                                "enchantments": "lapis:food/fresh"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "lapis:enchantment/food/fresh"
+    },
+    "sends_telemetry_event": false
+}

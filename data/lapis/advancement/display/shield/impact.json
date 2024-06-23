@@ -33,7 +33,7 @@
         }
     },
     "rewards": {
-        "function": "lapis:advancements/display/shield/impact",
+        "function": "lapis:advancement/display/shield/impact",
         "experience": 10
     },
     "sends_telemetry_event": false

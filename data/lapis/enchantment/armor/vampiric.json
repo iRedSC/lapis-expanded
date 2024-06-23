@@ -1,0 +1,102 @@
+{
+    "description": "Vampiric",
+    "supported_items": "#minecraft:enchantable/armor",
+    "primary_items": "#minecraft:enchantable/armor",
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 0,
+    "slots": ["armor"],
+    "effects": {
+        "minecraft:tick": [
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lapis:enchantment/armor/vampiric/damage"
+                },
+                "requirements": [
+                    {
+                        "condition": "minecraft:time_check",
+                        "value": {
+                            "min": 500,
+                            "max": 13000
+                        },
+                        "period": 24000
+                    },
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "location": {
+                                "can_see_sky": true
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "effect": {
+                    "type": "minecraft:spawn_particles",
+                    "particle": {
+                        "type": "minecraft:dust",
+                        "color": [0.3, 0, 0],
+                        "scale": 1
+                    },
+                    "horizontal_position": {
+                        "type": "entity_position"
+                    },
+                    "vertical_position": {
+                        "type": "in_bounding_box",
+                        "scale": 0.4
+                    },
+                    "horizontal_velocity": {},
+                    "vertical_velocity": {},
+                    "speed": 0
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lapis:enchantment/armor/vampiric/effect"
+                },
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "periodic_tick": 20
+                    }
+                }
+            }
+        ],
+        "minecraft:post_attack": [
+            {
+                "enchanted": "victim",
+                "affected": "victim",
+                "effect": {
+                    "type": "minecraft:damage_entity",
+                    "damage_type": "minecraft:player_attack",
+                    "min_damage": 10,
+                    "max_damage": 20
+                },
+                "requirements": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "attacker",
+                    "predicate": {
+                        "slots": {
+                            "weapon.mainhand": {
+                                "items": "minecraft:wooden_sword"
+                            }
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}

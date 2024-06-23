@@ -25,7 +25,7 @@
                     "effects": [
                         {
                             "type": "minecraft:run_function",
-                            "function": "lapis:veinmine/trigger"
+                            "function": "lapis:enchantment/pickaxe/veinmine/trigger"
                         }
                     ]
                 }

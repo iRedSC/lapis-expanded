@@ -1,0 +1,31 @@
+{
+    "description": [
+        {
+            "text": "Bane of G",
+            "color": "#AA0000"
+        },
+        {
+            "text": "o",
+            "color": "#AA0000",
+            "obfuscated": true
+        },
+        {
+            "text": "ds",
+            "color": "#AA0000"
+        }
+    ],
+    "supported_items": "#minecraft:enchantable/weapon",
+    "primary_items": "#minecraft:enchantable/weapon",
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 0,
+    "slots": []
+}

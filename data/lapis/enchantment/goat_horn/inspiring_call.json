@@ -1,0 +1,21 @@
+{
+    "description": {
+        "text": "Inspiring Call",
+        "color": "#00AAAA"
+    },
+    "exclusive_set": "lapis:goat_horn/raiders_call",
+    "supported_items": "minecraft:goat_horn",
+    "primary_items": "minecraft:goat_horn",
+    "weight": 10,
+    "max_level": 3,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 0,
+    "slots": []
+}

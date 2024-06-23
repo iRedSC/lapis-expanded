@@ -1,7 +1,3 @@
 {
-    "values": [
-        "lapis:blast/check",
-        "lapis:chopping/check",
-        "lapis:veinmine/check"
-    ]
+    "values": ["lapis:block/marker/trigger/destroy"]
 }

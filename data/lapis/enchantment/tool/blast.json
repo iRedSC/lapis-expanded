@@ -26,7 +26,7 @@
                     "effects": [
                         {
                             "type": "minecraft:run_function",
-                            "function": "lapis:blast/trigger"
+                            "function": "lapis:enchantment/tool/blast/trigger"
                         }
                     ]
                 }

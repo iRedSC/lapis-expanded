@@ -1,0 +1,37 @@
+{
+    "description": "Shocking Strikes",
+    "supported_items": "#minecraft:enchantable/weapon",
+    "primary_items": "#minecraft:enchantable/weapon",
+    "weight": 1,
+    "max_level": 3,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 0,
+    "slots": ["mainhand"],
+    "effects": {
+        "minecraft:post_attack": [
+            {
+                "enchanted": "attacker",
+                "affected": "attacker",
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lapis:enchantment/weapon/shocking_strikes/tag"
+                }
+            },
+            {
+                "enchanted": "attacker",
+                "affected": "victim",
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lapis:enchantment/weapon/shocking_strikes/trigger"
+                }
+            }
+        ]
+    }
+}

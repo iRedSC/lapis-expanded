@@ -1,0 +1,20 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:spawner"
+                }
+            ],
+            "functions": [
+                {
+                    "function": "minecraft:copy_components",
+                    "source": "block_entity",
+                    "include": ["minecraft:block_entity_data"]
+                }
+            ]
+        }
+    ]
+}

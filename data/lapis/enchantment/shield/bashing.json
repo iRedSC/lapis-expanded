@@ -49,28 +49,17 @@
                             "function": "lapis:test"
                         }
                     ]
-                },
-                "requirements": {
-                    "condition": "minecraft:random_chance",
-                    "chance": {
-                        "type": "minecraft:enchantment_level",
-                        "amount": {
-                            "type": "minecraft:linear",
-                            "base": 0.25,
-                            "per_level_above_first": 0.1
-                        }
-                    }
                 }
             }
         ],
-        "minecraft:damage": [
+        "minecraft:knockback": [
             {
                 "effect": {
                     "type": "minecraft:add",
                     "value": {
                         "type": "minecraft:linear",
-                        "base": 5,
-                        "per_level_above_first": 1
+                        "base": 1,
+                        "per_level_above_first": 0.5
                     }
                 }
             }

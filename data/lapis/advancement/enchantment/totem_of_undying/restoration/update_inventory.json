@@ -1,0 +1,24 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "predicates": {
+                            "minecraft:enchantments": [
+                                {
+                                    "enchantments": "lapis:totem_of_undying/restoration"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "lapis:enchantment/totem_of_undying/restoration/save/trigger"
+    },
+    "sends_telemetry_event": false
+}

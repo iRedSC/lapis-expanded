@@ -1,0 +1,51 @@
+{
+    "description": "Curse of Darkness",
+    "supported_items": "#minecraft:enchantable/armor",
+    "primary_items": "#minecraft:enchantable/armor",
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 0,
+    "slots": ["armor"],
+    "effects": {
+        "minecraft:tick": [
+            {
+                "effect": {
+                    "type": "minecraft:apply_mob_effect",
+                    "to_apply": "minecraft:darkness",
+                    "min_duration": 10,
+                    "max_duration": 20,
+                    "min_amplifier": 0,
+                    "max_amplifier": 0
+                },
+                "requirements": [
+                    {
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.25
+                    },
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "location": {
+                                "light": {
+                                    "light": {
+                                        "min": 5
+                                    }
+                                }
+                            },
+                            "periodic_tick": 200
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

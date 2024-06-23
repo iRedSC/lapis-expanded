@@ -1,0 +1,33 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "lapis.played_goat_horn": {
+                                "min": 1
+                            }
+                        }
+                    }
+                ],
+                "item": {
+                    "predicates": {
+                        "minecraft:enchantments": [
+                            {
+                                "enchantments": "lapis:goat_horn/raiders_call"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "lapis:enchantment/goat_horn/raiders_call/trigger"
+    },
+    "sends_telemetry_event": false
+}

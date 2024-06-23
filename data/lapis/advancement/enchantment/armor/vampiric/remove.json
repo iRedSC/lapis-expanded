@@ -1,0 +1,42 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "slots": {
+                                    "armor.*": {
+                                        "predicates": {
+                                            "minecraft:enchantments": [
+                                                {
+                                                    "enchantments": "lapis:armor/vampiric"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "condition": "minecraft:entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "lapis.tag.vampiric": 1
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "lapis:enchantment/armor/vampiric/remove"
+    },
+    "sends_telemetry_event": false
+}

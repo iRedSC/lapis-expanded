@@ -1,0 +1,42 @@
+{
+    "description": {
+        "text": "God Thorns",
+        "color": "#AA0000"
+    },
+    "supported_items": "#minecraft:enchantable/armor",
+    "primary_items": "#minecraft:enchantable/armor",
+    "weight": 1,
+    "max_level": 5,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 0,
+    "slots": ["armor"],
+    "effects": {
+        "minecraft:post_attack": [
+            {
+                "enchanted": "victim",
+                "affected": "attacker",
+                "effect": {
+                    "type": "minecraft:damage_entity",
+                    "damage_type": "lapis:god_thorns",
+                    "min_damage": {
+                        "type": "minecraft:linear",
+                        "base": 1,
+                        "per_level_above_first": 1
+                    },
+                    "max_damage": {
+                        "type": "minecraft:linear",
+                        "base": 1,
+                        "per_level_above_first": 1
+                    }
+                }
+            }
+        ]
+    }
+}

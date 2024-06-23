@@ -33,7 +33,7 @@
         }
     },
     "rewards": {
-        "function": "lapis:advancements/display/axe/chopping",
+        "function": "lapis:advancement/display/axe/chopping",
         "experience": 10
     },
     "sends_telemetry_event": false

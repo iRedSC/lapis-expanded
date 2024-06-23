@@ -1,0 +1,74 @@
+{
+    "description": "Grounding",
+    "supported_items": "#minecraft:enchantable/armor",
+    "primary_items": "#minecraft:enchantable/armor",
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 0,
+    "slots": ["armor"],
+    "effects": {
+        "minecraft:tick": [
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lapis:enchantment/armor/grounding/unshock"
+                },
+                "requirements": {
+                    "condition": "minecraft:entity_scores",
+                    "entity": "this",
+                    "scores": {
+                        "lapis.shock_duration": {
+                            "min": 1
+                        }
+                    }
+                }
+            },
+            {
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "lapis:enchantment/armor/grounding/trigger"
+                },
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "location": {
+                                "can_see_sky": true
+                            },
+                            "periodic_tick": 3000
+                        }
+                    },
+                    {
+                        "condition": "minecraft:random_chance",
+                        "chance": 0.4
+                    }
+                ]
+            }
+        ],
+        "minecraft:damage_immunity": [
+            {
+                "effect": {},
+                "requirements": {
+                    "condition": "minecraft:damage_source_properties",
+                    "predicate": {
+                        "tags": [
+                            {
+                                "id": "minecraft:is_lightning",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "description": "Dulling",
+    "supported_items": "#minecraft:enchantable/weapon",
+    "primary_items": "#minecraft:enchantable/weapon",
+    "weight": 1,
+    "max_level": 5,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 0,
+    "slots": ["mainhand"],
+    "effects": {
+        "minecraft:attributes": [
+            {
+                "id": "lapis:weapon/dulling",
+                "attribute": "minecraft:generic.attack_damage",
+                "amount": {
+                    "type": "minecraft:linear",
+                    "base": -0.199,
+                    "per_level_above_first": -0.2
+                },
+                "operation": "add_multiplied_total"
+            }
+        ]
+    }
+}

@@ -1,0 +1,71 @@
+{
+    "description": {
+        "text": "Refreshing",
+        "color": "#00AAAA"
+    },
+    "supported_items": "minecraft:totem_of_undying",
+    "primary_items": "minecraft:totem_of_undying",
+    "weight": 10,
+    "max_level": 3,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 0,
+    "slots": ["mainhand", "offhand"],
+    "effects": {
+        "minecraft:tick": [
+            {
+                "effect": {
+                    "type": "minecraft:all_of",
+                    "effects": [
+                        {
+                            "type": "minecraft:apply_mob_effect",
+                            "to_apply": "minecraft:regeneration",
+                            "min_duration": {
+                                "type": "minecraft:linear",
+                                "base": 3,
+                                "per_level_above_first": 3
+                            },
+                            "max_duration": {
+                                "type": "minecraft:linear",
+                                "base": 15,
+                                "per_level_above_first": 5
+                            },
+                            "min_amplifier": 0,
+                            "max_amplifier": 0
+                        },
+                        {
+                            "type": "minecraft:run_function",
+                            "function": "lapis:enchantment/totem_of_undying/refreshing/trigger"
+                        }
+                    ]
+                },
+                "requirements": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "periodic_tick": 300
+                        }
+                    },
+                    {
+                        "condition": "minecraft:random_chance",
+                        "chance": {
+                            "type": "minecraft:enchantment_level",
+                            "amount": {
+                                "type": "minecraft:linear",
+                                "base": 0.5,
+                                "per_level_above_first": 0.1
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

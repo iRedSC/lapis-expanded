@@ -1,0 +1,50 @@
+{
+    "description": {
+        "text": "Immortality",
+        "color": "#7647d3"
+    },
+    "supported_items": "#minecraft:enchantable/armor",
+    "primary_items": "#minecraft:enchantable/armor",
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 0,
+    "slots": ["armor"],
+    "effects": {
+        "minecraft:damage_immunity": [
+            {
+                "effect": {},
+                "requirements": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:damage_source_properties",
+                            "predicate": {
+                                "source_entity": {
+                                    "slots": {
+                                        "weapon.mainhand": {
+                                            "predicates": {
+                                                "minecraft:enchantments": [
+                                                    {
+                                                        "enchantments": "lapis:weapon/bane_of_gods"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

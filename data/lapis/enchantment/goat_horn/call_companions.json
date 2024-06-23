@@ -1,0 +1,20 @@
+{
+    "description": {
+        "text": "Call Companions",
+        "color": "#00AAAA"
+    },
+    "supported_items": "minecraft:goat_horn",
+    "primary_items": "minecraft:goat_horn",
+    "weight": 10,
+    "max_level": 3,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 0,
+    "slots": []
+}

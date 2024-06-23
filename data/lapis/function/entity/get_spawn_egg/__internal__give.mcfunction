@@ -1,0 +1,1 @@
+$give @s $(id)_spawn_egg[entity_data=$(data), lore=['$(name)']] $(amount)

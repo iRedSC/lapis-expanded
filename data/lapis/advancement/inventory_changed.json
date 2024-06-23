@@ -5,7 +5,7 @@
         }
     },
     "rewards": {
-        "function": "lapis:advancements/inventory_changed"
+        "function": "lapis:advancement/inventory_changed"
     },
     "sends_telemetry_event": false
 }

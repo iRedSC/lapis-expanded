@@ -1,3 +1,11 @@
 {
-    "values": ["lapis:heavy", "lapis:stale"]
+    "values": [
+        "lapis:any/heavy",
+        "lapis:food/stale",
+        "lapis:goat_horn/raiders_call",
+        "lapis:weapon/dulling",
+        "lapis:weapon/healing_strikes",
+        "lapis:tool/voiding",
+        "lapis:armor/darkness_curse"
+    ]
 }

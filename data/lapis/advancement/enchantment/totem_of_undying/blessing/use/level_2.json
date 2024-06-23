@@ -1,0 +1,23 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:used_totem",
+            "conditions": {
+                "item": {
+                    "predicates": {
+                        "minecraft:enchantments": [
+                            {
+                                "enchantments": "lapis:totem_of_undying/blessing",
+                                "levels": 2
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "lapis:enchantment/totem_of_undying/blessing/trigger/level_2"
+    },
+    "sends_telemetry_event": false
+}

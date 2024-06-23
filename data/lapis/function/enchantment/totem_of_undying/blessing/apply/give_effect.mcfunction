@@ -1,0 +1,1 @@
+$effect give @s $(id) infinite $(level) true

@@ -1,0 +1,1 @@
+execute as @e[type=item,tag=!lapis.checked,distance=..2] at @s run function lapis:enchantment/tool/autosmelt/_smelt
