@@ -1,3 +1,2 @@
 
-
-$data remove storage lapis:data soulbound.saved.$(id).soulbound
+$data remove storage lapis:data db.players.$(id).soulbound

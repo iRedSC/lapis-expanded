@@ -3,8 +3,8 @@
         "text": "Multitool",
         "color": "#FFAA00"
     },
-    "supported_items": "#taglib:tools",
-    "primary_items": "#taglib:tools",
+    "supported_items": "#taglib:tool/tools",
+    "primary_items": "#taglib:tool/tools",
     "weight": 1,
     "max_level": 1,
     "min_cost": {
@@ -16,13 +16,13 @@
         "per_level_above_first": 0
     },
     "anvil_cost": 0,
-    "slots": [],
+    "slots": ["mainhand"],
     "effects": {
         "minecraft:hit_block": [
             {
                 "effect": {
                     "type": "minecraft:run_function",
-                    "function": "lapis:multitool/trigger"
+                    "function": "lapis:enchantment/tool/multitool/trigger"
                 }
             }
         ]

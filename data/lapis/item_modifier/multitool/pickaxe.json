@@ -9,7 +9,7 @@
                 "predicate": {
                     "slots": {
                         "weapon.mainhand": {
-                            "items": "#taglib:iron_tools"
+                            "items": "#taglib:tool/iron_tools"
                         }
                     }
                 }
@@ -26,7 +26,7 @@
                 "predicate": {
                     "slots": {
                         "weapon.mainhand": {
-                            "items": "#taglib:diamond_tools"
+                            "items": "#taglib:tool/diamond_tools"
                         }
                     }
                 }
@@ -43,7 +43,7 @@
                 "predicate": {
                     "slots": {
                         "weapon.mainhand": {
-                            "items": "#taglib:golden_tools"
+                            "items": "#taglib:tool/golden_tools"
                         }
                     }
                 }
@@ -60,7 +60,7 @@
                 "predicate": {
                     "slots": {
                         "weapon.mainhand": {
-                            "items": "#taglib:stone_tools"
+                            "items": "#taglib:tool/stone_tools"
                         }
                     }
                 }
@@ -77,7 +77,7 @@
                 "predicate": {
                     "slots": {
                         "weapon.mainhand": {
-                            "items": "#taglib:wooden_tools"
+                            "items": "#taglib:tool/wooden_tools"
                         }
                     }
                 }
@@ -94,7 +94,7 @@
                 "predicate": {
                     "slots": {
                         "weapon.mainhand": {
-                            "items": "#taglib:netherite_tools"
+                            "items": "#taglib:tool/netherite_tools"
                         }
                     }
                 }

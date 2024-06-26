@@ -1,30 +1,40 @@
 {
     "description": "Heavy",
-    "supported_items": "#minecraft:enchantable/mining",
-    "primary_items": "#minecraft:enchantable/mining",
-    "weight": 5,
+    "supported_items": "#minecraft:enchantable/durability",
+    "primary_items": "#minecraft:enchantable/durability",
+    "weight": 1,
     "max_level": 3,
     "min_cost": {
-        "base": 0,
+        "base": 1,
         "per_level_above_first": 0
     },
     "max_cost": {
-        "base": 0,
+        "base": 30,
         "per_level_above_first": 0
     },
-    "anvil_cost": 0,
-    "slots": ["mainhand"],
+    "anvil_cost": 8,
+    "slots": ["any"],
     "effects": {
         "minecraft:attributes": [
             {
                 "id": "lapis:heavy",
-                "attribute": "minecraft:player.block_break_speed",
+                "attribute": "minecraft:generic.movement_speed",
                 "amount": {
-                    "type": "minecraft:lookup",
-                    "values": [-0.7, -0.8, -0.9],
-                    "fallback": -1
+                    "type": "minecraft:linear",
+                    "base": -0.05,
+                    "per_level_above_first": -0.05
                 },
-                "operation": "add_value"
+                "operation": "add_multiplied_total"
+            },
+            {
+                "id": "lapis:heavy",
+                "attribute": "minecraft:generic.jump_strength",
+                "amount": {
+                    "type": "minecraft:linear",
+                    "base": -0.05,
+                    "per_level_above_first": -0.05
+                },
+                "operation": "add_multiplied_total"
             }
         ]
     }

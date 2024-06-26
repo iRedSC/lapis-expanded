@@ -1,6 +1,5 @@
 
 
-
 execute store result storage lapis:data temp.player.id int 1 run scoreboard players get @s lapis.id
 
 execute store result score $keep_inventory lapis.temp run gamerule keepInventory

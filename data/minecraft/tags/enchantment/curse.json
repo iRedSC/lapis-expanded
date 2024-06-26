@@ -6,6 +6,8 @@
         "lapis:weapon/dulling",
         "lapis:weapon/healing_strikes",
         "lapis:tool/voiding",
-        "lapis:armor/darkness_curse"
+        "lapis:armor/darkness_curse",
+        "lapis:armor/vampiric",
+        "lapis:any/sticky"
     ]
 }

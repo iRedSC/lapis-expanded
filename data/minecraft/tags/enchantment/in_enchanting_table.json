@@ -1,0 +1,18 @@
+{
+    "values": [
+        "lapis:any/sticky",
+        "lapis:any/heavy",
+        "lapis:armor/greed",
+        "lapis:armor/grounding",
+        "lapis:boots/wandering",
+        "lapis:chestplate/reach",
+        "lapis:chestplate/shrinking",
+        "lapis:goat_horn/call_companions",
+        "lapis:shield/bashing",
+        "lapis:tool/autosmelt",
+        "lapis:tool/voiding",
+        "lapis:weapon/slowing",
+        "lapis:weapon/dulling",
+        "lapis:weapon/withering"
+    ]
+}

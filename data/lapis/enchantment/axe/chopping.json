@@ -5,17 +5,17 @@
     },
     "supported_items": "#minecraft:axes",
     "primary_items": "#minecraft:axes",
-    "weight": 10,
+    "weight": 1,
     "max_level": 5,
     "min_cost": {
-        "base": 0,
-        "per_level_above_first": 0
+        "base": 50,
+        "per_level_above_first": 25
     },
     "max_cost": {
-        "base": 0,
-        "per_level_above_first": 0
+        "base": 75,
+        "per_level_above_first": 25
     },
-    "anvil_cost": 0,
+    "anvil_cost": 12,
     "slots": ["mainhand"],
     "effects": {
         "minecraft:hit_block": [

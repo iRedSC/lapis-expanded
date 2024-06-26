@@ -1,5 +1,6 @@
 
 scoreboard objectives add lapis.tag.vampiric dummy
+scoreboard objectives add lapis.telekinesis.id dummy
 
 scoreboard objectives add lapis.const dummy
 scoreboard players set $num.20 lapis.const 20
@@ -24,7 +25,10 @@ scoreboard objectives add lapis.id dummy
 
 scoreboard objectives add lapis.blocked_with_shield minecraft.custom:minecraft.damage_blocked_by_shield
 
+forceload add 0 0
+
 forceload add 440044 440044
+
 setblock 440044 -1 440044 minecraft:yellow_shulker_box
 setblock 440044 -2 440044 minecraft:yellow_shulker_box
 summon item_frame 440044 1000 440044 {Invulnerable:1b,Invisible:1b,Fixed:1b,Tags:["lapis.item"],Item:{}}

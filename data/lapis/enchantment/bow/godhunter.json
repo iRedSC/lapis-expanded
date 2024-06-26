@@ -19,14 +19,14 @@
     "weight": 1,
     "max_level": 1,
     "min_cost": {
-        "base": 0,
+        "base": 100,
         "per_level_above_first": 0
     },
     "max_cost": {
-        "base": 0,
+        "base": 200,
         "per_level_above_first": 0
     },
-    "anvil_cost": 0,
+    "anvil_cost": 24,
     "slots": ["hand"],
     "effects": {
         "minecraft:projectile_spawned": [

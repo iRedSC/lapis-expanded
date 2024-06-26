@@ -1,0 +1,20 @@
+{
+    "description": {
+        "text": "Permanence",
+        "color": "#00AAAA"
+    },
+    "supported_items": "#taglib:all",
+    "primary_items": "#taglib:all",
+    "weight": 2,
+    "max_level": 1,
+    "min_cost": {
+        "base": 75,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 100,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 8,
+    "slots": []
+}

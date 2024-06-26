@@ -1,5 +1,7 @@
 execute as @e[tag=lapis.tick] at @s run function lapis:entity/tick
 
+execute as @e[scores={lapis.telekinesis.id=0..}] at @s run function lapis:enchantment/weapon/telekinesis/teleport
+
 execute as @e[scores={lapis.shock_duration=1..}] at @s run function lapis:enchantment/weapon/shocking_strikes/shock
 
 execute as @e[tag=lapis.particle] at @s run function lapis:particle
